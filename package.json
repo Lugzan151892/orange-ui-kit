@@ -1,7 +1,6 @@
 {
 	"name": "orange-ui-kit",
-	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"main": "./dist/orange-ui-kit.ts",
 	"module": "./dist/orange-ui-kit.ts",
