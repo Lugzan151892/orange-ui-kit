@@ -1,9 +1,9 @@
 {
 	"name": "orange-ui-kit",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
-	"main": "./dist/orange-ui-kit.ts",
-	"module": "./dist/orange-ui-kit.ts",
+	"main": "./dist/orange-ui-kit.js",
+	"module": "./dist/orange-ui-kit.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"dev": "vite",
@@ -29,12 +29,12 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/orange-ui-kit.ts",
-			"require": "./dist/orange-ui-kit.ts"
+			"import": "./dist/orange-ui-kit.js",
+			"require": "./dist/orange-ui-kit.js"
 		},
 		"./dist/style.css": {
-			"import": "./dist/orange-ui-kit.ts",
-			"require": "./dist/orange-ui-kit.ts"
+			"import": "./dist/style.css",
+			"require": "./dist/style.css"
 		}
 	}
 }
