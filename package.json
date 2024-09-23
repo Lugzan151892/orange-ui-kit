@@ -1,10 +1,9 @@
 {
 	"name": "orange-ui-kit",
-	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.3",
 	"type": "module",
-	"main": "./dist/orange-ui-kit.ts",
-	"module": "./dist/orange-ui-kit.ts",
+	"main": "./dist/orange-ui-kit.js",
+	"module": "./dist/orange-ui-kit.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"dev": "vite",
@@ -20,6 +19,7 @@
 		"sass-embedded": "^1.78.0",
 		"typescript": "^5.5.3",
 		"vite": "^5.4.1",
+		"vite-plugin-dts": "^4.2.1",
 		"vue-tsc": "^2.0.29"
 	},
 	"peerDependencies": {
@@ -30,12 +30,12 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/orange-ui-kit.ts",
-			"require": "./dist/orange-ui-kit.ts"
+			"import": "./dist/orange-ui-kit.js",
+			"require": "./dist/orange-ui-kit.js"
 		},
 		"./dist/style.css": {
-			"import": "./dist/orange-ui-kit.ts",
-			"require": "./dist/orange-ui-kit.ts"
+			"import": "./dist/style.css",
+			"require": "./dist/style.css"
 		}
 	}
 }
