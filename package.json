@@ -1,10 +1,9 @@
 {
 	"name": "orange-ui-kit",
-	"version": "0.0.4",
+	"version": "0.0.7",
 	"type": "module",
 	"main": "./dist/orange-ui-kit.js",
 	"module": "./dist/orange-ui-kit.js",
-	"types": "./dist/index.d.ts",
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc -b && vite build",
@@ -31,7 +30,8 @@
 	"exports": {
 		".": {
 			"import": "./dist/orange-ui-kit.js",
-			"require": "./dist/orange-ui-kit.js"
+			"require": "./dist/orange-ui-kit.js",
+			"types": "./dist/index.d.ts"
 		},
 		"./dist/style.css": {
 			"import": "./dist/style.css",
