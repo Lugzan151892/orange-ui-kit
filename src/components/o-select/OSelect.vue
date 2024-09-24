@@ -56,7 +56,10 @@ const selectItems = computed<ISelectItem[]>(() =>
 </script>
 
 <style lang="scss" module>
+@import "../../style.css";
+
 $component: "r-select";
+
 .#{$component} {
 	position: relative;
 	display: flex;
