@@ -57,6 +57,10 @@ const onClick = () => {
 };
 </script>
 <style lang="scss" module>
+@use "@/style.css";
+@use "@/styles/styles.scss";
+@use "@/styles/variables.scss";
+
 $component: o-button;
 
 .#{$component} {
