@@ -50,7 +50,6 @@ const handleClose = () => {
 	justify-content: center;
 }
 
-/* ---------------------------------- */
 .fade-enter-active,
 .fade-leave-active {
 	transition: opacity 0.4s linear;

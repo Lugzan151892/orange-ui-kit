@@ -97,7 +97,10 @@ const opened = defineModel({ default: false });
 </script>
 
 <style lang="scss" module>
+@import "../../style.css";
+
 $component: "r-modal";
+
 .#{$component} {
 	&-wrapper {
 		position: absolute;

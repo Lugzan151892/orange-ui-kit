@@ -81,6 +81,8 @@ const onInput = (event: Event) => {
 </script>
 
 <style lang="scss" module>
+@import "../../style.css";
+
 $component: "r-code-input";
 
 @keyframes border-blink {
