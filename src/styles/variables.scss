@@ -1,9 +1,9 @@
 // width/height pixels [0-300]
 @for $i from 0 through 300 {
-	.r-w-#{$i} {
+	.o-w-#{$i} {
 		width: $i + px;
 	}
-	.r-h-#{$i} {
+	.o-h-#{$i} {
 		height: $i + px;
 	}
 }
@@ -11,10 +11,10 @@
 @for $i from 0 through 20 {
 	$val: $i * 5;
 
-	.r-vw-#{$val} {
+	.o-vw-#{$val} {
 		width: $val + vw;
 	}
-	.r-vh-#{$val} {
+	.o-vh-#{$val} {
 		height: $val + vh;
 	}
 }
@@ -24,40 +24,15 @@
 	$name: $i * 5;
 	$val: $i * 5%;
 
-	.r-wp-#{$name} {
+	.o-wp-#{$name} {
 		width: $val;
 	}
-	.r-hp-#{$name} {
+	.o-hp-#{$name} {
 		height: $val;
 	}
-
-	// @media (max-width: #{$breakpoint-xs-max}) {
-	//   .xs\:ao-wp-#{$name} { width: $val; }
-	//   .xs\:ao-hp-#{$name} { height: $val; }
-	// }
-
-	// @media (min-width: $breakpoint-sm-min) and (max-width: #{$breakpoint-sm-max}) {
-	//   .sm\:ao-wp-#{$name} { width: $val; }
-	//   .sm\:ao-hp-#{$name} { height: $val; }
-	// }
-
-	// @media (min-width: $breakpoint-md-min) and (max-width: #{$breakpoint-md-max}) {
-	//   .md\:ao-wp-#{$name} { width: $val; }
-	//   .md\:ao-hp-#{$name} { height: $val; }
-	// }
-
-	// @media (min-width: $breakpoint-lg-min) and (max-width: #{$breakpoint-lg-max}) {
-	//   .lg\:ao-wp-#{$name} { width: $val; }
-	//   .lg\:ao-hp-#{$name} { height: $val; }
-	// }
-
-	// @media (min-width: $breakpoint-xl-min) {
-	//   .xl\:ao-wp-#{$name} { width: $val; }
-	//   .xl\:ao-hp-#{$name} { height: $val; }
-	// }
 }
 
-.r-m-auto {
+.o-m-auto {
 	margin: 0 auto;
 }
 
@@ -65,77 +40,77 @@
 @for $i from 0 through 100 {
 	$val: $i;
 
-	.r-pt-#{$val} {
+	.o-pt-#{$val} {
 		padding-top: $val + px;
 	}
-	.r-pb-#{$val} {
+	.o-pb-#{$val} {
 		padding-bottom: $val + px;
 	}
-	.r-pl-#{$val} {
+	.o-pl-#{$val} {
 		padding-left: $val + px;
 	}
-	.r-pr-#{$val} {
+	.o-pr-#{$val} {
 		padding-right: $val + px;
 	}
-	.r-p-#{$val} {
+	.o-p-#{$val} {
 		padding: $val + px;
 	}
-	.r-px-#{$val} {
+	.o-px-#{$val} {
 		padding-right: $val + px;
 		padding-left: $val + px;
 	}
-	.r-py-#{$val} {
+	.o-py-#{$val} {
 		padding-top: $val + px;
 		padding-bottom: $val + px;
 	}
 
-	.r-mt-#{$val} {
+	.o-mt-#{$val} {
 		margin-top: $val + px;
 	}
-	.r-mb-#{$val} {
+	.o-mb-#{$val} {
 		margin-bottom: $val + px;
 	}
-	.r-ml-#{$val} {
+	.o-ml-#{$val} {
 		margin-left: $val + px;
 	}
-	.r-mr-#{$val} {
+	.o-mr-#{$val} {
 		margin-right: $val + px;
 	}
-	.r-m-#{$val} {
+	.o-m-#{$val} {
 		margin: $val + px;
 	}
-	.r-mx-#{$val} {
+	.o-mx-#{$val} {
 		margin-right: $val + px;
 		margin-left: $val + px;
 	}
-	.r-my-#{$val} {
+	.o-my-#{$val} {
 		margin-top: $val + px;
 		margin-bottom: $val + px;
 	}
 }
 
-.r-mt-auto {
+.o-mt-auto {
 	margin-top: auto;
 }
 
-.r-mr-auto {
+.o-mr-auto {
 	margin-right: auto;
 }
 
-.r-mb-auto {
+.o-mb-auto {
 	margin-bottom: auto;
 }
 
-.r-ml-auto {
+.o-ml-auto {
 	margin-left: auto;
 }
 
-.r-mx-auto {
+.o-mx-auto {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.r-my-auto {
+.o-my-auto {
 	margin-top: auto;
 	margin-bottom: auto;
 }

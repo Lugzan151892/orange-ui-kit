@@ -1,49 +1,84 @@
-.r-pointer {
+@import "../styles/variables.scss";
+
+:root {
+	--color-text: #3f3f3f;
+	--main-color: #ff6108;
+	--background-orange: #ff8d08;
+	--background-second: #e7e7e7;
+	--main-white: #f3f3f3;
+	--main-error: #e82525;
+	--main-warning: #036cff;
+	--main-success: #07ff03;
+	--background-error: #ffc3c3;
+}
+
+*::-webkit-scrollbar {
+	width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 8px;
+	background-color: #e7e7e7;
+	border: 1px solid #cacaca;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background-color: var(--main-color);
+}
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+.o-pointer {
 	cursor: pointer;
 }
 
-.r-flex {
+.o-flex {
 	display: flex;
 }
 
-.r-grid {
+.o-grid {
 	display: grid;
 }
 
-.r-text--center {
+.o-text--center {
 	text-align: center;
 }
 
-.r-link {
+.o-link {
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.r-link:hover {
+.o-link:hover {
 	text-decoration: underline;
 	color: var(--main-color);
 }
 
-.r-grid-column {
+.o-grid-column {
 	grid-auto-flow: row;
 }
 
-.r-grid-row {
+.o-grid-row {
 	grid-auto-flow: column;
 }
 
-.r-border--top {
+.o-border--top {
 	border-top: 0.5px solid rgb(87, 87, 87);
 }
 
-.r-border--bottom {
+.o-border--bottom {
 	border-bottom: 0.5px solid rgb(87, 87, 87);
 }
 
-.r-border--left {
+.o-border--left {
 	border-left: 0.5px solid rgb(87, 87, 87);
 }
 
-.r-border--right {
+.o-border--right {
 	border-right: 0.5px solid rgb(87, 87, 87);
 }

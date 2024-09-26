@@ -45,6 +45,13 @@
 			"require": "./dist/orange-ui-kit.js",
 			"types": "./dist/index.d.ts"
 		},
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    },
 		"./styles": "./dist/style.css"
-	}
+	},
+  "sideEffects": [
+    "*.css"
+  ]
 }
