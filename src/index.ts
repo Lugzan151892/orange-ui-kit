@@ -1,6 +1,4 @@
-import "@/style.css";
-import "@/styles/styles.scss";
-import "@/styles/variables.scss";
+import "./styles/styles.scss";
 
 export { default as OButton } from "@/components/o-button/OButton.vue";
 export { default as OBackground } from "@/components/o-background/OBackground.vue";
