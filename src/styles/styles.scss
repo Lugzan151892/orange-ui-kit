@@ -33,68 +33,52 @@
 	box-sizing: border-box;
 }
 
-body {
-	color: var(--color-text);
-	transition: color 0.5s, background-color 0.5s;
-	line-height: 1;
-	font-family: "Montserrat", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-optical-sizing: auto;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
-	height: 100dvh;
-}
-
-.r-pointer {
+.o-pointer {
 	cursor: pointer;
 }
 
-.r-flex {
+.o-flex {
 	display: flex;
 }
 
-.r-grid {
+.o-grid {
 	display: grid;
 }
 
-.r-text--center {
+.o-text--center {
 	text-align: center;
 }
 
-.r-link {
+.o-link {
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.r-link:hover {
+.o-link:hover {
 	text-decoration: underline;
 	color: var(--main-color);
 }
 
-.r-grid-column {
+.o-grid-column {
 	grid-auto-flow: row;
 }
 
-.r-grid-row {
+.o-grid-row {
 	grid-auto-flow: column;
 }
 
-.r-border--top {
+.o-border--top {
 	border-top: 0.5px solid rgb(87, 87, 87);
 }
 
-.r-border--bottom {
+.o-border--bottom {
 	border-bottom: 0.5px solid rgb(87, 87, 87);
 }
 
-.r-border--left {
+.o-border--left {
 	border-left: 0.5px solid rgb(87, 87, 87);
 }
 
-.r-border--right {
+.o-border--right {
 	border-right: 0.5px solid rgb(87, 87, 87);
 }
