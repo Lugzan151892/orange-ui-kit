@@ -1,12 +1,12 @@
 {
 	"name": "orange-ui-kit",
-	"version": "0.0.21",
+	"version": "0.0.22",
 	"type": "module",
 	"main": "./dist/orange-ui-kit.js",
 	"module": "./dist/orange-ui-kit.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "npm version patch --no-git-tag-version && vue-tsc -b && vite build",
+		"build": "vue-tsc -b && vite build",
 		"publish": "npm run build && npm version patch --no-git-tag-version && git add package.json && git commit -m \"chore(release): %s\" && git push --follow-tags && npm publish",
 		"preview": "vite preview",
 		"storybook": "storybook dev -p 6006",
