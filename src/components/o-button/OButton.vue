@@ -1,14 +1,14 @@
 <template>
 	<button
 		:class="$style[className]"
-		class="r-pointer r-m-auto"
+		class="o-pointer o-m-auto"
 		v-bind="$attrs"
 		:style="styles"
 		@click.stop="onClick()">
 		<div
 			:class="{
 				[$style[`${className}-prepend`]]: true,
-				'r-mr-10': $slots.default,
+				'o-mr-10': $slots.default,
 			}"
 			v-if="$slots.prepend">
 			<slot name="prepend" />
@@ -18,7 +18,7 @@
 				{{ text }}
 			</div>
 		</slot>
-		<div v-if="$slots.append" class="r-ml-10">
+		<div v-if="$slots.append" class="o-ml-10">
 			<slot name="append" />
 		</div>
 	</button>
@@ -57,7 +57,6 @@ const onClick = () => {
 };
 </script>
 <style lang="scss" module>
-@use "@/style.css";
 @use "@/styles/styles.scss";
 @use "@/styles/variables.scss";
 

@@ -2,17 +2,17 @@
 	<RBackground :opened="opened" :closable="!preventClose" @close="opened = false">
 		<div
 			v-if="opened"
-			class="r-m-auto"
+			class="o-m-auto"
 			:class="{
 				[$style[`${className}-wrapper`]]: true,
-				'r-hp-90 r-wp-90': fullSize,
+				'o-hp-90 o-wp-90': fullSize,
 			}">
 			<div
 				v-if="!hideHeader"
 				:class="{
 					[$style[`${className}-header`]]: true,
-					'r-p-8': true,
-					'r-border--bottom': !hideBorders,
+					'o-p-8': true,
+					'o-border--bottom': !hideBorders,
 				}">
 				<div :class="$style[`${className}-header--content`]">
 					<slot name="header">
@@ -24,16 +24,16 @@
 				<div
 					:class="{
 						[$style[`${className}-header--right`]]: true,
-						'r-hp-100': !$slots['header-right'],
+						'o-hp-100': !$slots['header-right'],
 					}">
 					<slot name="header-right">
 						<RButton
 							:class="{
-								'r-ml-8': !$slots['header'],
+								'o-ml-8': !$slots['header'],
 							}"
 							@click="opened = false">
 							<template #prepend>
-								<img class="r-pointer r-h-20 r-w-15" src="@/assets/icons/close.svg" alt="Close" />
+								<img class="o-pointer o-h-20 o-w-15" src="@/assets/icons/close.svg" alt="Close" />
 							</template>
 						</RButton>
 					</slot>
@@ -42,7 +42,7 @@
 			<div
 				:class="{
 					[$style[`${className}-content`]]: true,
-					'r-mt-24': hideHeader,
+					'o-mt-24': hideHeader,
 				}">
 				<div :class="$style[`${className}-content--left`]">
 					<slot name="content-left" />
@@ -57,7 +57,7 @@
 			<div
 				:class="{
 					[$style[`${className}-footer`]]: true,
-					'r-border--top': !hideBorders,
+					'o-border--top': !hideBorders,
 				}">
 				<div :class="$style[`${className}-footer--left`]">
 					<slot name="footer-left" />
@@ -91,15 +91,13 @@ withDefaults(
 );
 
 defineEmits(["close"]);
-const className = "r-modal";
+const className = "o-modal";
 
 const opened = defineModel({ default: false });
 </script>
 
 <style lang="scss" module>
-@import "../../style.css";
-
-$component: "r-modal";
+$component: "o-modal";
 
 .#{$component} {
 	&-wrapper {
