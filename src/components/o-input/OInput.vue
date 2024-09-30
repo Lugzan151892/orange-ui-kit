@@ -6,7 +6,7 @@
 				[$style[`${className}--error`]]: error,
 			}"
 			:style="inputStyles">
-			<div v-if="$slots['icon-before']" class="r-ml-8" :class="$style[`${className}-iconbefore`]">
+			<div v-if="$slots['icon-before']" class="o-ml-8" :class="$style[`${className}-iconbefore`]">
 				<slot name="icon-before" />
 			</div>
 			<input
@@ -21,14 +21,14 @@
 				@input="handleInput($event)" />
 			<div
 				v-if="props.type === 'password'"
-				class="r-mx-10 r-pointer r-h-25 r-w-25"
+				class="o-mx-10 o-pointer o-h-25 o-w-25"
 				:class="$style[`${className}-iconafter`]"
 				:style="{
 					'background-image': `url(${showPassword ? passwordShow : passwordHide})`,
 				}"
 				@click="showPassword = !showPassword" />
 		</div>
-		<p class="r-ml-16 r-mt-2" :class="$style[`${className}-error`]">
+		<p class="o-ml-16 o-mt-2" :class="$style[`${className}-error`]">
 			{{ error }}
 		</p>
 	</div>
@@ -38,7 +38,7 @@ import { computed, ref } from "vue";
 import passwordHide from "@/assets/icons/password_hide.png";
 import passwordShow from "@/assets/icons/password_show.png";
 
-const className = "r-input";
+const className = "o-input";
 
 const emit = defineEmits<{
 	"update:modelValue": [text: string];
@@ -94,9 +94,7 @@ const handleChange = (e: Event) => {
 };
 </script>
 <style lang="scss" module>
-@import "../../style.css";
-
-$component: r-input;
+$component: o-input;
 
 .#{$component} {
 	min-height: 52px;

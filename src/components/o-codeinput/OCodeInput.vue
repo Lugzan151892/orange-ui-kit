@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<div :class="$style[className]" class="r-grid">
+		<div :class="$style[className]" class="o-grid">
 			<div
 				v-for="(number, index) in length"
 				:key="number"
@@ -8,7 +8,7 @@
 					[$style[`${className}-item`]]: true,
 					[$style[`${className}-item--error`]]: error,
 				}"
-				class="r-h-50 r-w-50 r-grid"
+				class="o-h-50 o-w-50 o-grid"
 				@click="focusInput">
 				<div
 					:class="{
@@ -25,8 +25,8 @@
 					}" />
 			</div>
 		</div>
-		<div v-if="error" :class="$style[`${className}-message`]" class="r-mt-24">
-			<p class="r-mb-8">Введен неверный код</p>
+		<div v-if="error" :class="$style[`${className}-message`]" class="o-mt-24">
+			<p class="o-mb-8">Введен неверный код</p>
 			<p>Попробуйте еще раз</p>
 		</div>
 		<input
@@ -43,7 +43,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-const className = "r-code-input";
+const className = "o-code-input";
 
 const emit = defineEmits(["input"]);
 const props = withDefaults(
@@ -81,9 +81,7 @@ const onInput = (event: Event) => {
 </script>
 
 <style lang="scss" module>
-@import "../../style.css";
-
-$component: "r-code-input";
+$component: "o-code-input";
 
 @keyframes border-blink {
 	0% {
