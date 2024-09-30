@@ -6,7 +6,7 @@
 	"module": "./dist/orange-ui-kit.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc -b && vite build",
+		"build": "npm version patch && vue-tsc -b && vite build",
 		"preview": "vite preview",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
