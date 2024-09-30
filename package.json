@@ -6,8 +6,8 @@
 	"module": "./dist/orange-ui-kit.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "npm version patch && vue-tsc -b && vite build",
-		"publish": "npm run build && npm publish",
+		"build": "npm version patch --no-git-tag-version && vue-tsc -b && vite build",
+		"publish": "npm run build && npm version patch -m \"chore(release): %s\" && npm publish",
 		"preview": "vite preview",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
