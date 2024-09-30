@@ -34,8 +34,6 @@ withDefaults(
 </script>
 
 <style lang="scss" module>
-@import "../../style.css";
-
 $component: "r-input-datalist";
 
 .#{$component} {

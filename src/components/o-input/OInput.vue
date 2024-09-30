@@ -94,8 +94,6 @@ const handleChange = (e: Event) => {
 };
 </script>
 <style lang="scss" module>
-@import "../../style.css";
-
 $component: r-input;
 
 .#{$component} {

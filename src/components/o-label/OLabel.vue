@@ -24,8 +24,6 @@ const className = "r-label";
 </script>
 
 <style lang="scss" module>
-@import "../../style.css";
-
 $component: "r-label";
 
 .#{$component} {
