@@ -1,5 +1,5 @@
 <template>
-	<div class="r-grid" :class="inLine ? [$style[`${className}-row`]] : [$style[`${className}-column`]]">
+	<div class="o-grid" :class="inLine ? [$style[`${className}-row`]] : [$style[`${className}-column`]]">
 		<label :class="$style[`${className}-caption`]" :for="labelId">
 			{{ caption }}
 		</label>
@@ -20,11 +20,11 @@ withDefaults(
 	}
 );
 
-const className = "r-label";
+const className = "o-label";
 </script>
 
 <style lang="scss" module>
-$component: "r-label";
+$component: "o-label";
 
 .#{$component} {
 	&-column {

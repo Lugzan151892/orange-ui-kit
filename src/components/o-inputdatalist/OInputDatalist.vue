@@ -1,9 +1,9 @@
 <template>
 	<div :class="$style[className]" class="ao-text">
 		<RInput :list="id" :id="id" @input="$emit('input', $event)" @change="$emit('change', $event)" />
-		<div class="r-wp-100" :class="$style[`${className}-option`]">
+		<div class="o-wp-100" :class="$style[`${className}-option`]">
 			<template v-for="item in options ?? []" :key="item.id">
-				<div :class="$style[`${className}-option--item`]" class="r-py-4 r-px-8">
+				<div :class="$style[`${className}-option--item`]" class="o-py-4 o-px-8">
 					<slot name="item" :item="item" @click="chooseOption(item.id)">
 						{{ item.text }}
 					</slot>
@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-const className = "r-input-datalist";
+const className = "o-input-datalist";
 
 defineEmits<{
 	input: [text: string];
@@ -34,7 +34,7 @@ withDefaults(
 </script>
 
 <style lang="scss" module>
-$component: "r-input-datalist";
+$component: "o-input-datalist";
 
 .#{$component} {
 	&-option {
