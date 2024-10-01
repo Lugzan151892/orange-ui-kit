@@ -103,8 +103,13 @@ $component: o-input;
 	grid-template-columns: 30px 1fr max-content;
 	align-items: center;
 	column-gap: 5px;
+	border: 2px solid transparent;
 
 	&:has(input:focus) {
+		border: 2px solid var(--main-color);
+	}
+
+	&:has(input:focus-visible) {
 		border: 2px solid var(--main-color);
 	}
 
