@@ -41,6 +41,10 @@
 	display: flex;
 }
 
+.o-flex-column {
+	flex-direction: column;
+}
+
 .o-grid {
 	display: grid;
 }
